@@ -23,7 +23,7 @@ class ThreddsData():
         
         # Create the storage path
         # Set storage_path to the current working directory if not provided
-        self.storage_path = storage_path if storage_path is not None else os.path.join(os.getcwd(), 'Data')
+        self.storage_path = storage_path if storage_path is not None else os.path.join(os.getcwd(), 'Data_Test')
         os.makedirs(self.storage_path, exist_ok=True)  
 
 
@@ -199,9 +199,9 @@ def get_dataloader(dataset: Dataset, batch_size: int, seed: int, shuffle: bool=T
         return train_loader
     
 if __name__ == "__main__":
-    years = [2018, 2019, 2020, 2021]
+    years = [2022]
     days = np.arange(1,365, 5)
-    hours = [18, 19, 20, 21]
+    hours = ['09','22']
     catalog_url = 'https://redoak.cs.toronto.edu/twitcher/ows/proxy/thredds/catalog/datasets/GOES17/ABI-L2-MCMIPM/catalog.xml'
     timeframe = [years, days, hours]
     thredds = ThreddsData(timeframe, catalog_url)
