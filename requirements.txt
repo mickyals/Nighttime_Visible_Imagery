@@ -1,0 +1,11 @@
+imageio==2.36.0
+numpy==2.1.2
+pandas==2.2.3
+piq==0.8.0
+scikit_learn==1.5.2
+siphon==0.9
+torch==2.4.1+cu124
+torch==2.5.0+cu118
+torchinfo==1.8.0
+wandb==0.18.5
+xarray==2024.9.0
